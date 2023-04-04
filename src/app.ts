@@ -1,6 +1,7 @@
 import express, { Response } from 'express';
 import cors from 'cors';
 import 'dotenv/config';
+import ligaRouter from './routes/liga';
 
 const app = express();
 
@@ -14,6 +15,9 @@ const PORT = <string>process.env.PORT || 4000;
 app.get('/', (_, res: Response) => res.send('Api inicilizada'));
 
 //Esta es una prueba de conexión
+
+// Middlewares
+app.use('/api/auth', ligaRouter);
 
 // Inicializando servidor
 app.listen(PORT, () => {

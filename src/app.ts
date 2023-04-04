@@ -17,7 +17,7 @@ app.get('/', (_, res: Response) => res.send('Api inicilizada'));
 //Esta es una prueba de conexión
 
 // Middlewares
-app.use('/api/auth', ligaRouter);
+app.use('/api/liga', ligaRouter);
 
 // Inicializando servidor
 app.listen(PORT, () => {

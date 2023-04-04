@@ -13,6 +13,8 @@ const PORT = <string>process.env.PORT || 4000;
 // http://localhost:4001
 app.get('/', (_, res: Response) => res.send('Api inicilizada'));
 
+//Esta es una prueba de conexión
+
 // Inicializando servidor
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

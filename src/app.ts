@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Puerto del server
-const PORT = <string>process.env.PORT || 4000;
+export const PORT = <string>process.env.PORT || 4000;
 
 // http://localhost:4001
 app.get('/', (_, res: Response) => res.send('Api inicilizada'));

@@ -11,7 +11,13 @@ export const ligaController = {
   obtenerUnEquipoPorId: async (_: Request, res: Response) => {
     try {
       res.status(200).json({ ok: true, msg: 'Tu equipo obtenido por id' });
-      
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  obtenerUnEquipoPorNombre: async (_: Request, res: Response) => {
+    try {
+      res.status(200).json({ ok: true, msg: 'Tu equipo obtenido por nombre' });
     } catch (error) {
       console.log(error);
     }
